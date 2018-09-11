@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MessageBox" customModule="RealtimeChatApp" customModuleProvider="target">
+            <connections>
+                <outlet property="attachButton" destination="8aw-7l-LQV" id="1sY-Rc-NeS"/>
+                <outlet property="emotionButton" destination="dpo-n6-1ql" id="AtB-CN-cLe"/>
+                <outlet property="messageHeightConstraint" destination="EDO-Sw-4mN" id="Nz9-Yw-dHP"/>
+                <outlet property="messageTextView" destination="jeh-JU-Hzj" id="rEa-4c-yQC"/>
+                <outlet property="sendButton" destination="NpX-H4-K8x" id="04e-M6-Sn7"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="384" height="46"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8sI-lK-b2b">
+                    <rect key="frame" x="0.0" y="0.0" width="384" height="46"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8aw-7l-LQV" customClass="FlatButton" customModule="Material">
+                            <rect key="frame" x="8" y="8" width="30" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="RxL-zO-kCE"/>
+                                <constraint firstAttribute="width" constant="30" id="bRK-4T-gM0"/>
+                            </constraints>
+                            <state key="normal" image="ic_attachment"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="image" keyPath="image" value="ic_attachment"/>
+                            </userDefinedRuntimeAttributes>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dpo-n6-1ql" customClass="FlatButton" customModule="Material">
+                            <rect key="frame" x="54" y="8" width="30" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="8Gr-j4-Xbp"/>
+                                <constraint firstAttribute="width" constant="30" id="sJ7-bZ-Jq6"/>
+                            </constraints>
+                            <state key="normal" image="ic_smile"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="image" keyPath="image" value="ic_smile"/>
+                            </userDefinedRuntimeAttributes>
+                        </button>
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jeh-JU-Hzj" customClass="CustomTextView" customModule="RealtimeChatApp" customModuleProvider="target">
+                            <rect key="frame" x="92" y="8" width="251" height="30"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="EDO-Sw-4mN"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Message"/>
+                            </userDefinedRuntimeAttributes>
+                        </textView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NpX-H4-K8x" customClass="FlatButton" customModule="Material">
+                            <rect key="frame" x="351" y="13" width="25" height="25"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="25" id="JwH-KE-BXc"/>
+                                <constraint firstAttribute="height" constant="25" id="ZIs-De-2fB"/>
+                            </constraints>
+                            <state key="normal" image="ic_navigation_send"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="image" keyPath="image" value="ic_navigation_send"/>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="sendAction:" destination="-1" eventType="touchUpInside" id="uUX-Jv-I0n"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="8aw-7l-LQV" secondAttribute="bottom" constant="8" id="5I8-r6-cQv"/>
+                        <constraint firstItem="8aw-7l-LQV" firstAttribute="leading" secondItem="8sI-lK-b2b" secondAttribute="leading" constant="8" id="Gsa-vW-9O4"/>
+                        <constraint firstAttribute="trailing" secondItem="NpX-H4-K8x" secondAttribute="trailing" constant="8" id="Je3-UL-G1k"/>
+                        <constraint firstItem="jeh-JU-Hzj" firstAttribute="leading" secondItem="dpo-n6-1ql" secondAttribute="trailing" constant="8" id="MVl-l6-IXD"/>
+                        <constraint firstItem="dpo-n6-1ql" firstAttribute="leading" secondItem="8aw-7l-LQV" secondAttribute="trailing" constant="16" id="ZPf-9B-Tbf"/>
+                        <constraint firstItem="jeh-JU-Hzj" firstAttribute="top" secondItem="8sI-lK-b2b" secondAttribute="top" constant="8" id="bCb-MP-q4L"/>
+                        <constraint firstAttribute="bottom" secondItem="jeh-JU-Hzj" secondAttribute="bottom" constant="8" id="e83-47-lrc"/>
+                        <constraint firstItem="NpX-H4-K8x" firstAttribute="leading" secondItem="jeh-JU-Hzj" secondAttribute="trailing" constant="8" id="eBH-fd-3m1"/>
+                        <constraint firstAttribute="bottom" secondItem="NpX-H4-K8x" secondAttribute="bottom" constant="8" id="sMN-xa-7lc"/>
+                        <constraint firstItem="dpo-n6-1ql" firstAttribute="centerY" secondItem="8aw-7l-LQV" secondAttribute="centerY" id="xJL-7y-ga4"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="8sI-lK-b2b" secondAttribute="bottom" id="8Hg-u8-zZ6"/>
+                <constraint firstItem="8sI-lK-b2b" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="QJu-64-txr"/>
+                <constraint firstItem="8sI-lK-b2b" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="qP4-m1-O9C"/>
+                <constraint firstItem="8sI-lK-b2b" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="r7m-MJ-MaQ"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="-38" y="571.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_attachment" width="27" height="27"/>
+        <image name="ic_navigation_send" width="25" height="25"/>
+        <image name="ic_smile" width="25" height="25"/>
+    </resources>
+</document>

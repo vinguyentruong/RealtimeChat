@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="AdditionAvatarCell" customModule="RealtimeChatApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="66" height="70"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="66" height="70"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Srq-Ui-F25">
+                        <rect key="frame" x="8" y="10" width="50" height="50"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="24+" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cp6-V9-Hya">
+                                <rect key="frame" x="0.0" y="17" width="50" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="Pom-UB-Q5p"/>
+                            <constraint firstItem="cp6-V9-Hya" firstAttribute="leading" secondItem="Srq-Ui-F25" secondAttribute="leading" priority="750" id="de9-03-Oaz"/>
+                            <constraint firstItem="cp6-V9-Hya" firstAttribute="centerX" secondItem="Srq-Ui-F25" secondAttribute="centerX" id="jEb-Cq-kJv"/>
+                            <constraint firstItem="cp6-V9-Hya" firstAttribute="centerY" secondItem="Srq-Ui-F25" secondAttribute="centerY" id="n3q-4U-U2T"/>
+                            <constraint firstAttribute="width" constant="50" id="rZP-AD-brG"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="Srq-Ui-F25" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="6OV-d6-YPJ"/>
+                <constraint firstItem="Srq-Ui-F25" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Jdf-j1-yP7"/>
+                <constraint firstItem="Srq-Ui-F25" firstAttribute="top" relation="greaterThanOrEqual" secondItem="gTV-IL-0wX" secondAttribute="top" id="apf-P9-XAZ"/>
+                <constraint firstItem="Srq-Ui-F25" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="g5E-i6-LJf"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="66" height="70"/>
+            <connections>
+                <outlet property="inforLabel" destination="cp6-V9-Hya" id="Dx9-EG-r1I"/>
+            </connections>
+            <point key="canvasLocation" x="33" y="62"/>
+        </collectionViewCell>
+    </objects>
+</document>

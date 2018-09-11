@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ImageCell" customModule="RealtimeChatApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="143" height="134"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="143" height="134"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ANo-Ks-uTW" userLabel="Content View">
+                        <rect key="frame" x="0.0" y="0.0" width="143" height="134"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image_avatar" translatesAutoresizingMaskIntoConstraints="NO" id="yGP-Gl-Mjo">
+                                <rect key="frame" x="0.0" y="0.0" width="143" height="136.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="yGP-Gl-Mjo" secondAttribute="height" multiplier="87:83" id="yt4-Jz-fWD"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="yGP-Gl-Mjo" firstAttribute="top" secondItem="ANo-Ks-uTW" secondAttribute="top" id="A8H-57-ALg"/>
+                            <constraint firstAttribute="trailing" secondItem="yGP-Gl-Mjo" secondAttribute="trailing" id="cD8-bK-jFb"/>
+                            <constraint firstItem="yGP-Gl-Mjo" firstAttribute="leading" secondItem="ANo-Ks-uTW" secondAttribute="leading" id="pOl-PA-VCd"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="ANo-Ks-uTW" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="ABh-8q-Uso"/>
+                <constraint firstAttribute="bottom" secondItem="ANo-Ks-uTW" secondAttribute="bottom" id="EWA-DA-YVh"/>
+                <constraint firstAttribute="trailing" secondItem="ANo-Ks-uTW" secondAttribute="trailing" id="SFz-Ts-zca"/>
+                <constraint firstItem="ANo-Ks-uTW" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="pfU-LL-Deg"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="143" height="134"/>
+            <connections>
+                <outlet property="avatarImageView" destination="yGP-Gl-Mjo" id="17L-df-T5N"/>
+            </connections>
+            <point key="canvasLocation" x="71.5" y="94"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="image_avatar" width="600" height="600"/>
+    </resources>
+</document>

@@ -7,12 +7,11 @@ target 'RealtimeChatApp' do
 
   # Pods for RealtimeChatApp
   pod 'Material'
-  pod 'SpringIndicator'
+#  pod 'SpringIndicator'
   pod 'IQKeyboardManagerSwift'
   pod 'RealmSwift'
-  pod 'RxSwift'
-  pod 'RxCocoa'
-  pod 'FSCalendar'
+  pod 'RxSwift', '4.2.0'
+  pod 'RxCocoa', '4.2.0'
   pod 'Swinject'
   pod 'SwinjectStoryboard'
   pod 'Alamofire'
@@ -21,6 +20,12 @@ target 'RealtimeChatApp' do
   pod 'Kingfisher', '~> 4.0'
   pod 'INSPhotoGallery'
   pod 'KeychainSwift'
+  pod 'LoremIpsum'
+  pod 'Socket.IO-Client-Swift', '~> 13.3.0'
+  pod 'ReachabilitySwift'
+  pod 'EventBusSwift'
+  pod 'NVActivityIndicatorView'
+#  pod 'AsyncDisplayKit'
 
   target 'RealtimeChatAppTests' do
     inherit! :search_paths

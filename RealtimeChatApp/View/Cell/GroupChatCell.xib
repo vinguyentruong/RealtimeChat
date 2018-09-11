@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Bold.ttf">
+            <string>Montserrat-Bold</string>
+        </array>
+        <array key="Montserrat-SemiBold.ttf">
+            <string>Montserrat-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="95" id="KGk-i7-Jjw" customClass="GroupChatCell" customModule="RealtimeChatApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="587" height="95"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="587" height="94.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hgi-ll-5XU" customClass="AvatarImageView" customModule="RealtimeChatApp" customModuleProvider="target">
+                        <rect key="frame" x="16" y="22.5" width="50" height="50"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="Crz-dn-6gh"/>
+                            <constraint firstAttribute="width" constant="50" id="Jsg-Ne-Vrj"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5BU-ju-AMZ">
+                        <rect key="frame" x="82" y="25" width="489" height="45"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="David Nguyen" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zF9-vS-Rx1">
+                                <rect key="frame" x="0.0" y="0.0" width="431" height="18.5"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="10:02" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cr9-5b-ew9">
+                                <rect key="frame" x="439" y="1" width="50" height="16"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" priority="750" constant="50" id="m9Y-fZ-LaJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="13"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Latest message" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HSi-NB-WnS">
+                                <rect key="frame" x="0.0" y="26" width="489" height="18.5"/>
+                                <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="15"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="HSi-NB-WnS" secondAttribute="trailing" id="3fz-Uq-JR7"/>
+                            <constraint firstAttribute="bottom" secondItem="HSi-NB-WnS" secondAttribute="bottom" id="89u-94-D42"/>
+                            <constraint firstItem="zF9-vS-Rx1" firstAttribute="top" secondItem="5BU-ju-AMZ" secondAttribute="top" id="Fem-vd-B4O"/>
+                            <constraint firstItem="HSi-NB-WnS" firstAttribute="leading" secondItem="5BU-ju-AMZ" secondAttribute="leading" id="JPB-gN-b98"/>
+                            <constraint firstItem="cr9-5b-ew9" firstAttribute="centerY" secondItem="zF9-vS-Rx1" secondAttribute="centerY" id="Kpj-Lz-fI3"/>
+                            <constraint firstAttribute="trailing" secondItem="cr9-5b-ew9" secondAttribute="trailing" id="PJB-Qb-UTH"/>
+                            <constraint firstItem="HSi-NB-WnS" firstAttribute="top" secondItem="zF9-vS-Rx1" secondAttribute="bottom" constant="8" id="SU1-qS-xaJ"/>
+                            <constraint firstItem="zF9-vS-Rx1" firstAttribute="leading" secondItem="5BU-ju-AMZ" secondAttribute="leading" id="jF3-4N-HNm"/>
+                            <constraint firstItem="cr9-5b-ew9" firstAttribute="leading" secondItem="zF9-vS-Rx1" secondAttribute="trailing" constant="8" id="uyK-Nu-sgR"/>
+                        </constraints>
+                    </view>
+                    <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eJR-If-jmL">
+                        <rect key="frame" x="82" y="93.5" width="505" height="1"/>
+                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="asH-lg-iR5"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="eJR-If-jmL" secondAttribute="trailing" id="9Id-UY-AqD"/>
+                    <constraint firstItem="eJR-If-jmL" firstAttribute="top" relation="greaterThanOrEqual" secondItem="5BU-ju-AMZ" secondAttribute="bottom" constant="16" id="AIT-QJ-e4H"/>
+                    <constraint firstItem="eJR-If-jmL" firstAttribute="leading" secondItem="5BU-ju-AMZ" secondAttribute="leading" id="GnN-nR-80f"/>
+                    <constraint firstAttribute="trailing" secondItem="5BU-ju-AMZ" secondAttribute="trailing" constant="16" id="Jqf-Qw-FKa"/>
+                    <constraint firstItem="hgi-ll-5XU" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="LB5-F9-o2J"/>
+                    <constraint firstItem="hgi-ll-5XU" firstAttribute="top" relation="greaterThanOrEqual" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="Sbp-PH-V2V"/>
+                    <constraint firstItem="hgi-ll-5XU" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="Z8i-jx-GGS"/>
+                    <constraint firstItem="5BU-ju-AMZ" firstAttribute="leading" secondItem="hgi-ll-5XU" secondAttribute="trailing" constant="16" id="cla-Gi-JTy"/>
+                    <constraint firstItem="5BU-ju-AMZ" firstAttribute="centerY" secondItem="hgi-ll-5XU" secondAttribute="centerY" id="iA3-1f-jw2"/>
+                    <constraint firstAttribute="bottom" secondItem="eJR-If-jmL" secondAttribute="bottom" id="vjl-uz-JtX"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="avatarView" destination="hgi-ll-5XU" id="EzO-8g-2t0"/>
+                <outlet property="latestMessageLabel" destination="HSi-NB-WnS" id="6jJ-hu-edp"/>
+                <outlet property="nickNameLabel" destination="zF9-vS-Rx1" id="526-Gu-AGT"/>
+                <outlet property="timeLabel" destination="cr9-5b-ew9" id="cHx-OR-Ju6"/>
+            </connections>
+            <point key="canvasLocation" x="158.5" y="77.5"/>
+        </tableViewCell>
+    </objects>
+</document>
